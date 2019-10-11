@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.main-header {
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    background-color: #445162;
+    padding: 5% 5% 5% 5%;
+    font-family: Arial;
+    color: white;
+    /* min-height: 200px; 
+    or just 5% */
+}
+
+.main-header:after {
+    content: "";
+    display: block;
+    width: 100%;
+    clear: both;
+}
+
+.header-head {
+    width: 40%;
+    padding: 0 0 30px 0;
+    font-size: 60px;
+    line-height: 1.2;
+    font-weight: 400;
+}
+
+.header-list {}
+
+.header-list-list {
+    margin: 0 0 0 15px;
+    list-style-type: none;
+}
+
+
+.header-list-item {
+    text-decoration: none;
+    padding: 0 0 5px 0;
+    font-size: 18px;
+    line-height: 36px;
+    font-weight: 400;
+    position: relative;
+}
+
+.header-list-item:before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-image: url(../img/tick.png);
+    background-size: cover;
+    position: absolute;
+    top: 10px;
+    left: -20px;
+}
+
+.header-img {
+    position: absolute;
+    top: 16%;
+    right: 5%;
+    min-width: 469px;
+    max-width: 30%;
+    min-height: 265px;
+    max-height: 30%;
+}
+
+.header-img img {
+    min-width: 469px;
+    max-width: 30%;
+    min-height: 265px;
+    max-height: 30%;
+    object-fit: fill;
+}
+
+
+.about {
+    min-height: 350px;
+    clear: both;
+}
+
+.about-main {
+    float: left;
+    padding: 5%;
+    width: 50%;
+    font-family: arial;
+}
+
+.about-main h2 {
+    margin: 0 0 20px 0;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #445161;
+}
+
+.about-main p {
+    margin: 0 0 20px 0;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #333333;
+}
+
+.about-video {
+    float: right;
+    margin: 5% 5% 0 0;
+    outline: 5px solid #445161;
+    width: 430px;
+    min-height: 245px;
+}
+
+.advantages {
+    min-height: 300px;
+    padding: 5%;
+    background-color: #f5f5f5;
+    clear: both;
+    font-family: arial;
+    color: #445161;
+}
+
+.advantages:after {
+       content: "";
+    display: block;
+    width: 100%;
+    clear: both;
+}
+
+.advantages h2 {
+    text-align: center;
+    margin: 0 0 70px 0;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #445161;
+}
+
+.advantages-ul-1 {
+    float: left;
+    width: 45%;
+}
+
+.advantages-ul-2 {
+    float: right;
+    width: 45%;
+}
+
+.advantages-list {
+    list-style-type: none;
+}
+
+.advantages-list-item {
+    padding-left: 40px;
+    margin: 0 0 35px 0;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #333333;
+    position: relative;
+}
+
+.advantages-list-item:before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/plus.png);
+    background-size: cover;
+    position: absolute;
+    top: 10px;
+    left: -10px;
+}
