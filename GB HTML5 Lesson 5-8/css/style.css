@@ -455,7 +455,6 @@ header {
 .portfolio {
     width: 100%;
     box-sizing: border-box;
-    padding: 5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -463,6 +462,7 @@ header {
 }
 
 .portfolio-header {
+    padding: 5% 0 0 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -589,7 +589,7 @@ header {
 }
 
 .bg-video {
-    object-fit: fill;
+    object-fit: cover;
     box-sizing: border-box;
     z-index: -100;
     overflow: hidden;
@@ -626,4 +626,77 @@ header {
     line-height: 24px;
     font-weight: 400;
     color: #c7b299;
+}
+
+.mobile {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.phone-hand {
+    min-height: 695px;
+    background-color: #fbfaf8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone-hand-img {
+    background-image: url(../img/phone_hand.png);
+    background-repeat: no-repeat;
+    margin: 100px 0 0 0;
+    width: 423px;
+    height: 616px;
+    
+}
+
+.phone-hand-text {
+    width: 650px;
+    display: flex;
+    flex-direction: column;
+    margin: 85px 0 31px 0;
+}
+
+.phone-hand-text h2 {
+    font-family: Raleway;
+font-size: 30px;
+line-height: 1.2;
+font-weight: 600;
+color: #555555;
+    margin: 0 0 40px 0;
+}
+
+.phone-hand-text p {
+    font-family: Montserrat;
+font-size: 16px;
+line-height: 28px;
+font-weight: 300;
+color: #8c8c8c;
+    margin: 0 0 45px 0;
+}
+
+.phone-hand-text ul {
+    list-style-type: none;
+    margin: 0 0 0 80px;
+}
+
+.phone-hand-text ul li {
+    font-family: Montserrat;
+font-size: 16px;
+line-height: 32px;
+font-weight: 300;
+color: #8c8c8c;
+    position: relative;
+}
+
+.phone-hand-text ul li:before {
+    content: "";
+    display: block;
+    background-image: url(../img/list_arrow.png);
+    background-repeat: no-repeat;
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    top: 5px;
+    left: -30px
 }
