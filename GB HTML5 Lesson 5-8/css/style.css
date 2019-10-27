@@ -77,15 +77,26 @@ header {
 .logo {
     width: 20%;
     margin: 0 0 0 10%;
-    display: flex;
-    align-items: center;
+    position: relative;
 }
 
-.logo-img {
+.logo span:hover {
+    color: #998675;
+}
+
+/* .logo-img {
     width: 65px;
     height: 55px;
     background-image: url(../img/logo.png);
     background-repeat: no-repeat;
+} */
+
+.svg-logo {
+    fill: white;
+}
+
+.svg-logo:hover {
+    fill: #998675;
 }
 
 .waxom {
@@ -93,6 +104,8 @@ header {
     line-height: 1.2;
     font-weight: 400;
     color: #ffffff;
+    position: absolute;
+    margin: 10px 0 0 0;
 }
 
 .navbar-ul {
@@ -237,16 +250,12 @@ header {
     margin: 5px;
 }
 
-.circle:active {
-    background-color: black;
-    width: 15px;
-    height: 15px;
-    border: 2px solid white;
-    border-radius: 50%;
+.circle:hover {
+    background-color: white;
 }
-
-/* Фон скачет... */
-
+.circle:active {
+    background-color: #756557;
+}
 
 .ideas {
     width: 100%;
