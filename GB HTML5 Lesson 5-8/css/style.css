@@ -92,23 +92,61 @@ header {
 }
 
 .navbar-link:hover {
+    fill: #998675;
     transform: scale(1.5);
     cursor: pointer;
 }
 
 .navbar-search {
-    width: 25px;
-    height: 25px;
+    width: 27px;
+    height: 27px;
     border: none;
     outline: none;
     background-color: transparent;
+    position: relative;
 }
 
-.navbar-search:hover {
+.navbar-search:hover .search-icon {
     transform: scale(1.5);
+    fill: #998675;
 }
 
-.navbar-search input {
+.search-label {
+    width: 27px;
+    height: 27px;
+    cursor: pointer;
+}
+
+.search-icon {
+    fill: white;
+}
+
+.search-input {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border: none;
+    outline: none;
+    margin: 15px 0 0 0;
+    padding: 20px 10px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.search-input:focus {
+    display: block;
+    width: 320px;
+    right: -135px;
+    font-family: 'montserratlight';
+    font-size: 16px;
+    transition: width 1s ease-out;
+    color: white;
+    background-color: #998675;
+    opacity: 0.8;
+}
+
+
+/* .navbar-search input {
     width: 100%;
     height: 100%;
     border: none;
@@ -128,7 +166,7 @@ header {
     background-image: none;
     outline: none;
     border: 1px solid gray;
-}
+} */
 
 .logo {
     width: 20%;
