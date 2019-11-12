@@ -86,7 +86,7 @@ header {
     top: 90px;
 }
 
-#navbar-ul {
+#navbar {
     display: none;
     width: 50px;
     min-height: 30px;
@@ -94,7 +94,7 @@ header {
 
 .navbar {
     display: block;
-    min-width: 500px;
+    min-width: 400px;
     max-width: 70%;
     margin: 0 0 0 0;
 }
@@ -1422,45 +1422,66 @@ header {
 
     .logo {
         margin: 0 0 0 0;
-    }
-
-    .navbar-icons {
-        width: 200px;
-        top: -5px;
-        left: 73px;
+        position: relative;
     }
 
     .mobile-label {
-        display: flex;
-        flex-direction: column;
+        display: block;
+        z-index: 250;
     }
 
-    .navbar-ul {
+    .navbar {
+        display: none;
         min-height: 300px;
-        width: 375px;
+        min-width: 300px;
+        margin: 0 auto;
         flex-direction: column;
         position: absolute;
-        top: -70px;
-        left: -19px;
-        z-index: 1;
-        visibility: hidden;
+        top: 130px;
+        z-index: 300;
+        overflow: hidden;   
+    }
+    
+    .dark {
+        display: none;
+        height: 500%;
+        width: 500%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: black;
+        opacity: 0.6;
+        z-index: 100;
     }
 
     .navbar-ul li {
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
+        min-width: 300px;
         height: 20px;
         margin: 0 auto;
         padding: 10px 0 10px 0;
-        background-color: transparent;
         background-color: #c7b299;
         font-family: montserrat-bold;
         border: 3px solid white;
+        margin: 3px;
         border-collapse: collapse;
-        margin: 10px;
+    }
+    
+    .navbar-ul li:hover {
+       color: #855E42;
+    }
+    
+    .navbar-ul li:active {
     }
 
+    .navbar-search,
+    .navbar-link {
+        margin: 25px 15px;
+    }
+    
     .mobile-menu-span {
         display: block;
         width: 50px;
@@ -1487,46 +1508,45 @@ header {
         transition: width, 0.5s;
     }
 
-    #navbar-ul:checked ~ .mobile-menu-span {
+    #navbar {
+        display: block;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: -10px;
+        cursor: pointer;
+        opacity: 0;
+        z-index: 350;
+    }
+
+    #navbar:checked ~ .navbar {
+        display: block;
+    }
+    
+    #navbar:checked ~ .dark {
+        display: block;
+    }
+
+    #navbar:checked ~ .mobile-menu-span {
         opacity: 1;
         transform: rotate(45deg) translate(0px, 0px);
         width: 50px;
         transition: width, 0.5s;
     }
 
-    #navbar-ul:checked ~ .mobile-menu-span:nth-last-child(1) {
+    #navbar:checked ~ .mobile-menu-span:nth-last-child(1) {
         opacity: 0;
         transform: rotate(0deg) scale(0.2, 0.2);
     }
 
-    #navbar-ul:checked ~ .mobile-menu-span:nth-last-child(2) {
+    #navbar:checked ~ .mobile-menu-span:nth-last-child(2) {
         opacity: 1;
         transform: rotate(-45deg) translate(-5px, 10px);
         width: 50px;
     }
 
-    #navbar-ul:checked ~ .mobile-menu-span:nth-last-child(3) {
+    #navbar:checked ~ .mobile-menu-span:nth-last-child(3) {
         transform: rotate(45deg) translate(0px, -10px);
-    }
-
-    #navbar-ul:checked ~ .navbar-ul {
-        visibility: visible;
-    }
-
-    #navbar-ul:checked ~ .navbar-ul li {}
-
-
-    #navbar-ul {
-        display: block;
-        width: 50px;
-        height: 50px;
-        position: absolute;
-        top: -8px;
-        cursor: pointer;
-        z-index: 2;
-        opacity: 0;
-        -webkit-touch-callout: none;
-        outline: none;
     }
 
     .header-text {
@@ -1543,12 +1563,10 @@ header {
 
     .arrow-left {
         top: 500px;
-        left: 35px;
     }
 
     .arrow-right {
         top: 500px;
-        right: 35px;
     }
 
     .slider {
@@ -1602,7 +1620,7 @@ header {
     .portfolio {
         width: 100%;
     }
-    
+
     .portfolio-header p {
         width: 100%;
     }
@@ -1729,20 +1747,20 @@ header {
         align-items: center;
         text-align: center;
     }
-    
+
 
     .footer-waxom {
         margin: 0;
     }
-    
+
     .footer-logo {
         margin: 0 0 30px -110px;
     }
-    
+
     .footer-posts {
         margin: 0;
     }
-    
+
     .footer-twitter {
         margin: 0;
     }
