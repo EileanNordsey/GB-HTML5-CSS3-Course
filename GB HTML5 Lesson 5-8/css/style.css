@@ -240,6 +240,38 @@ header {
     margin: 300px auto 0 auto;
     text-align: center;
     color: #ffffff;
+    position: relative;
+}
+
+.arrow-left {
+    width: 45px;
+    height: 70px;
+    position: absolute;
+    top: 50px;
+    right: 90%;
+}
+
+.arrow-right {
+    width: 45px;
+    height: 70px;
+    position: absolute;
+    top: 50px;
+    left: 90%;
+}
+
+.arrow-svg {
+    fill: white;
+    transition: fill 75ms ease-out,
+        transform 75ms ease-out;
+}
+
+.arrow-svg:hover {
+    fill: #998675;
+    transform: scale(1.2);
+}
+
+.arrow-svg:active {
+    fill: #756557;
 }
 
 .header-text h2 {
@@ -266,37 +298,6 @@ header {
     font-size: 16px;
     line-height: 24px;
     font-weight: 300;
-}
-
-.arrow-left {
-    width: 45px;
-    height: 70px;
-    position: absolute;
-    top: 550px;
-    left: 200px;
-}
-
-.arrow-right {
-    width: 45px;
-    height: 70px;
-    position: absolute;
-    top: 550px;
-    right: 200px;
-}
-
-.arrow-svg {
-    fill: white;
-    transition: fill 75ms ease-out,
-        transform 75ms ease-out;
-}
-
-.arrow-svg:hover {
-    fill: #998675;
-    transform: scale(1.2);
-}
-
-.arrow-svg:active {
-    fill: #756557;
 }
 
 .button {
@@ -1407,7 +1408,8 @@ header {
 @media (max-width: 575.98px) {
 
     .container {
-        width: 375px;
+        min-width: 375px;
+        max-width: 575.98px;
         padding: 0;
         margin: 0 auto;
     }
@@ -1540,12 +1542,12 @@ header {
     }
 
     .arrow-left {
-        top: 530px;
+        top: 500px;
         left: 35px;
     }
 
     .arrow-right {
-        top: 530px;
+        top: 500px;
         right: 35px;
     }
 
