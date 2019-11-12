@@ -51,7 +51,7 @@ a {
 }
 
 .container {
-    width: 1920px;
+    max-width: 1920px;
     margin: 0 auto;
 }
 
@@ -65,6 +65,15 @@ header {
     background-size: cover;
     font-family: raleway;
     position: relative;
+}
+
+.navbar-wrapper {
+    max-width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .mobile-label {
@@ -83,20 +92,21 @@ header {
 }
 
 .navbar {
-    position: relative;
+    display: block;
+    min-width: 500px;
+    max-width: 70%;
     margin: 0 0 0 0;
 }
 
 .navbar-icons {
-    width: 80px;
+    min-width: 150px;
+    max-width: 20%;
+    margin: 0 0 0 0;
     min-height: 50px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    position: absolute;
-    top: -50px;
-    right: 265px;
 }
 
 .navbar-link {
@@ -161,8 +171,8 @@ header {
 }
 
 .logo {
-    width: 20%;
-    margin: 0 0 0 326px;
+    min-width: 200px;
+    margin: 0 0 0 0;
     position: relative;
     display: block;
     transition: fill 1s ease-out,
@@ -207,21 +217,19 @@ header {
 .navbar-ul {
     list-style-type: none;
     display: flex;
-    position: absolute;
-    top: -50px;
-    right: 376px;
-
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-width: 90%;
 }
 
 .navbar-ul li {
-    padding: 15px;
+    padding: 10px;
     font-size: 14px;
     line-height: 1.2;
     font-weight: 300;
     color: #ffffff;
     font-family: Montserrat;
-    position: relative;
-
 }
 
 .navbar-ul li:hover {
