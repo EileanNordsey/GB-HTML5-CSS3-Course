@@ -1534,12 +1534,12 @@ header {
     
     #mobile-navbar:checked {
         position: fixed;
-        transform: translate(200px, -50px);
+        transform: translate(175px, 10px);
     }
     
     #mobile-navbar:checked ~ .mobile-navbar-lines {
         position: fixed;
-        transform: translate(200px, -50px);
+        transform: translate(175px, 10px);
     }
 
     #mobile-navbar:checked ~ .navbar {
@@ -1769,13 +1769,9 @@ header {
 
     .brands-icons {
         width: 100%;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
         
-    }
-    
-    .brands-icons a {
-        width: 40%;
     }
 
     .brands-icons a {
