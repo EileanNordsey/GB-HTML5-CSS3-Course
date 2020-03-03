@@ -1,0 +1,711 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Raleway-refular';
+    src: url('../fonts/Raleway-regular.ttf');
+}
+
+@font-face {
+    font-family: 'Raleway-light';
+    src: url('../fonts/Raleway-light.ttf');
+}
+
+@font-face {
+    font-family: 'Raleway-bold';
+    src: url('../fonts/Raleway-bold.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('../fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-light';
+    src: url('../fonts/Montserrat-light.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-bold';
+    src: url('../fonts/Montserrat-bold.ttf');
+}
+
+/* шрифты добавил локально - при удалении href на GoogleFonts из html шрифты все равно пропадают */
+
+html,
+body {
+    height: 100%;
+    font-family: 'raleway-regular';
+}
+
+clear:after {
+    display: block;
+    content: "";
+    width: 100%;
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1920px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 5%;
+    width: 100%;
+    min-height: 1024px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-image: url(../img/header_bg.png);
+    background-size: cover;
+    font-family: Raleway;
+    position: relative;
+}
+
+.navbar {
+    position: relative;
+    margin: 0 0 0 5%;
+}
+
+.logo {
+    width: 20%;
+    margin: 0 0 0 10%;
+    position: relative;
+}
+
+.logo span:hover {
+    color: #998675;
+}
+
+/* .logo-img {
+    width: 65px;
+    height: 55px;
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+} */
+
+.svg-logo {
+    fill: white;
+}
+
+.svg-logo:hover {
+    fill: #998675;
+}
+
+.waxom {
+    font-size: 34px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #ffffff;
+    position: absolute;
+    margin: 10px 0 0 0;
+}
+
+.navbar-ul {
+    list-style-type: none;
+    display: flex;
+    position: absolute;
+    top: -55px;
+    right: 10%;
+
+}
+
+.navbar-ul li {
+    padding: 15px;
+    font-size: 17px;
+    line-height: 1.2;
+    font-weight: 300;
+    color: #ffffff;
+    font-family: Montserrat;
+    position: relative;
+
+}
+
+.navbar-ul li:hover {
+    color: #c7b299;
+}
+
+.navbar-ul li:active {
+    color: #756557;
+}
+
+.navbar-img {
+    position: absolute;
+    top: 25%;
+    right: 25px;
+}
+
+.navbar-img-1 {
+    position: absolute;
+    top: 25%;
+    right: -25px;
+}
+
+.li-icon {
+    background-image: url(../img/icon_cart.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 12px;
+    right: -10px;
+}
+
+.li-icon-2 {
+    background-image: url(../img/icon_search.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 12px;
+    right: -20px;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 300px auto 0 auto;
+    text-align: center;
+    color: #ffffff;
+}
+
+.header-text h2 {
+    margin: 0 0 15px 0;
+    font-size: 36px;
+    line-height: 1.2;
+    font-weight: 500;
+    font-family: raleway;
+}
+
+.header-text h1 {
+    margin: 0 0 20px 0;
+    font-size: 52px;
+    line-height: 1.2;
+    font-weight: 800;
+    font-family: raleway;
+}
+
+.header-text p {
+    text-align: center;
+    width: 550px;
+    margin: 0 0 50px 0;
+    font-family: Montserrat;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+}
+
+.arrow-left {
+    width: 45px;
+    height: 70px;
+    position: absolute;
+    top: 550px;
+    left: 200px;
+}
+
+.arrow-right {
+    width: 45px;
+    height: 70px;
+    position: absolute;
+    top: 550px;
+    right: 200px;
+}
+
+.arrow-link:hover {}
+
+.button {
+    display: block;
+    width: 170px;
+    height: 55px;
+    font-family: Raleway;
+    font-size: 14px;
+    line-height: 55px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #998675;
+    border-radius: 5px;
+}
+
+.button:hover {
+    color: #ffffff;
+    background-color: #756557;
+}
+
+.slider {
+    margin: 330px 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: gray;
+    margin: 5px;
+}
+
+.circle:hover {
+    background-color: white;
+}
+.circle:active {
+    background-color: #756557;
+}
+
+.ideas {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.ideas-icons {
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 375px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+}
+
+.idea-figure {
+    width: 25%;
+    margin: 0 3% 0 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.idea-figure h2:hover {
+    color: #998675;
+}
+
+.idea-figure p:hover {
+    color: black;
+}
+
+.idea-img {
+    background-image: url(../img/pen.png);
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    margin: 10px 0 30px 0;
+}
+
+.idea-img-2 {
+    background-image: url(../img/layers.png);
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    margin: 10px 0 30px 0;
+}
+
+.idea-img-3 {
+    background-image: url(../img/gear.png);
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    margin: 10px 0 30px 0;
+}
+
+.idea-img-4 {
+    background-image: url(../img/portfile.png);
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    margin: 10px 0 30px 0;
+}
+
+.idea-pic {
+    margin: 10px 0 30px 0;
+}
+
+.idea-figure h2 {
+    text-align: center;
+    font-family: Raleway;
+    font-size: 22px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #555555;
+    margin: 0 0 25px 0;
+}
+
+.development h2 {
+    text-align: center;
+    font-family: Raleway;
+    font-size: 22px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #c7b299;
+}
+
+.idea-figure p {
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #8c8c8c;
+}
+
+.ideas-icons-block {
+    width: 70px;
+    height: 3px;
+    background-color: #f1eee9;
+    margin: 30px 0 0 0;
+}
+
+.ideas-icons-block:hover {
+    background-color: #c7b299;
+}
+
+/*
+.ideas-icons-block-dev {
+    width: 70px;
+    height: 3px;
+    background-color: #c7b299;
+    margin: 30px 0 0 0;
+}
+*/
+
+.realization {
+    background-color: #fbfaf8;
+    padding: 5% 5% 0 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.realization h2 {
+    font-family: Raleway;
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #555555;
+    margin: 0 0 25px 0;
+}
+
+.realization p {
+    font-family: Montserrat;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 300;
+    color: #8c8c8c;
+    margin: 0 0 40px 0;
+    width: 750px;
+    text-align: center;
+}
+
+.purchase {
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 150px;
+    padding: 5%;
+    background-image: linear-gradient(90.0deg, #211b19 0%, #4e3427 100%);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative;
+}
+
+.purchase h3 {
+    font-family: Raleway;
+    font-size: 28px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #ffffff;
+    margin: 0 0 10px 30px;
+}
+
+.waxom-text {
+    font-family: Raleway;
+    font-size: 28px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #c7b299;
+}
+
+.purchase p {
+    font-family: Montserrat;
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #615855;
+    margin: 0 0 0 30px;
+}
+
+.button-purchase {
+    text-align: center;
+    position: absolute;
+    right: 10%;
+    display: block;
+    width: 170px;
+    height: 55px;
+    font-family: Raleway;
+    font-size: 14px;
+    line-height: 55px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #998675;
+    border-radius: 5px;
+}
+
+.button-purchase:hover {
+    color: #ffffff;
+    background-color: #756557;
+}
+
+.portfolio {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-header {
+    padding: 5% 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portfolio-header h2 {
+    font-family: Raleway;
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #555555;
+}
+
+.portfolio-header p {
+    width: 750px;
+    text-align: center;
+    margin: 25px 0 50px 0;
+    font-family: Montserrat;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 300;
+    color: #8c8c8c;
+}
+
+.portfolio-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 0 40px 0;
+}
+
+.portfolio-buttons a {
+    display: block;
+    height: 30px;
+    padding: 10px 25px;
+    margin: 0 10px 0 0;
+    font-family: Montserrat;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 300;
+    color: #998675;
+    background-color: #ffffff;
+    border-radius: 3.0px;
+    border: 3px solid #998675;
+    ;
+}
+
+.portfolio-buttons a:hover {
+    color: #ffffff;
+    background-color: #998675;
+}
+
+.portfolio-buttons a:active {
+    color: #ffffff;
+    background-color: #756557;
+}
+
+.portfolio-figures {
+    width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.portfolio-figures figure {
+    margin: 30px 0 0 0;
+    display: flex;
+    flex-flow: column;
+}
+
+.portfolio-figures figurecaption {
+    min-height: 80px;
+    background-color: #fbfaf8;
+    text-align: center;
+    padding: 30px 30px 0 30px;
+    font-family: Raleway;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #c7b299;
+}
+
+.portfolio-figures figurecaption p {
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+    color: #d1d1d1;
+}
+
+.figure-link:hover {}
+
+.button-portfolio {
+    margin: 40px 0 80px 0;
+    display: block;
+    text-align: center;
+    width: 170px;
+    height: 55px;
+    font-family: Raleway;
+    font-size: 14px;
+    line-height: 55px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #998675;
+    border-radius: 5px;
+}
+
+.button-portfolio:hover {
+    color: #ffffff;
+    background-color: #756557;
+}
+
+.video {
+    box-sizing: border-box;
+    min-height: 705px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.bg-video {
+    object-fit: cover;
+    box-sizing: border-box;
+    z-index: -100;
+    overflow: hidden;
+}
+
+.video-text {
+    position: absolute;
+    top: 250px;
+    left: 34.5%;
+    width: 600px;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.play-button {}
+
+.video-text p {
+    margin: 30px 0 0 0;
+    font-family: Montserrat;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+.video-text span {
+    margin: 30px 0 0 0;
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #c7b299;
+}
+
+.mobile {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.phone-hand {
+    min-height: 695px;
+    background-color: #fbfaf8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone-hand-img {
+    background-image: url(../img/phone_hand.png);
+    background-repeat: no-repeat;
+    margin: 100px 0 0 0;
+    width: 423px;
+    height: 616px;
+    
+}
+
+.phone-hand-text {
+    width: 650px;
+    display: flex;
+    flex-direction: column;
+    margin: 85px 0 31px 0;
+}
+
+.phone-hand-text h2 {
+    font-family: Raleway;
+font-size: 30px;
+line-height: 1.2;
+font-weight: 600;
+color: #555555;
+    margin: 0 0 40px 0;
+}
+
+.phone-hand-text p {
+    font-family: Montserrat;
+font-size: 16px;
+line-height: 28px;
+font-weight: 300;
+color: #8c8c8c;
+    margin: 0 0 45px 0;
+}
+
+.phone-hand-text ul {
+    list-style-type: none;
+    margin: 0 0 0 80px;
+}
+
+.phone-hand-text ul li {
+    font-family: Montserrat;
+font-size: 16px;
+line-height: 32px;
+font-weight: 300;
+color: #8c8c8c;
+    position: relative;
+}
+
+.phone-hand-text ul li:before {
+    content: "";
+    display: block;
+    background-image: url(../img/list_arrow.png);
+    background-repeat: no-repeat;
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    top: 5px;
+    left: -30px
+}
